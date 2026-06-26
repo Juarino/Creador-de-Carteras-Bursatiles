@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creador de Carteras Bursátiles - Gestión de Carteras</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Chart.js for interactive visualizations -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Local Asset Data Scripts -->
+  <script src="data/metadata.js"></script>
+  <script src="data/indices.js"></script>
+  <script src="data/crypto.js"></script>
+  <script src="data/argentina.js"></script>
+  <script src="data/us.js"></script>
+</head>
+<body>
+
+  <!-- Loading Overlay -->
+  <div id="loader-overlay" class="loader-overlay">
+    <div class="loader-content">
+      <div class="spinner"></div>
+      <h2>Cargando base de activos...</h2>
+      <p>Procesando datos históricos de EE.UU., Argentina y Cripto</p>
+    </div>
+  </div>
+
+  <div id="app" class="app-container">
+    <header class="app-header">
+      <div class="logo-area">
+        <span class="badge">GESTIÓN DE CARTERAS</span>
+        <h1>Creador de Carteras</h1>
+      </div>
+      <p class="subtitle">Análisis cuantitativo y asignación núcleo-satélite para inversores particulares</p>
+    </header>
+
+    <!-- Progress Stepper -->
+    <div class="stepper">
+      <div class="step-item active" data-step="1">
+        <div class="step-num">1</div>
+        <div class="step-label">Perfil de Inversor</div>
+      </div>
+      <div class="step-divider"></div>
+      <div class="step-item" data-step="2">
+        <div class="step-num">2</div>
+        <div class="step-label">Asignación Estratégica</div>
+      </div>
+      <div class="step-divider"></div>
+      <div class="step-item" data-step="3">
+        <div class="step-num">3</div>
+        <div class="step-label">Selección de Activos</div>
+      </div>
+      <div class="step-divider"></div>
+      <div class="step-item" data-step="4">
+        <div class="step-num">4</div>
+        <div class="step-label">Frontera y Monte Carlo</div>
+      </div>
+    </div>
+
+    <!-- Main Content Panels -->
+    <main class="panel-container">
+      
+      <!-- STEP 1: Profiler Panel -->
+      <section id="panel-step-1" class="step-panel active">
+        <div class="panel-header">
+          <h2>1. Definí tu perfil de riesgo</h2>
+          <p>La regla del mínimo: Cruzamos tres dimensiones y manda siempre la más restrictiva para proteger tu capital.</p>
+        </div>
+
+        <div class="question-group">
+          <!-- Dimension 1: Tolerance -->
+          <div class="question-card">
+            <h3>Tolerancia al Riesgo</h3>
+            <p class="question-desc">¿Cómo reaccionarías si tu portafolio cae un 20% en un mes?</p>
+            <div class="options-grid">
+              <label class="option-btn">
+                <input type="radio" name="tolerance" value="1" checked>
+                <div class="option-content">
+                  <span class="option-title">Conservador</span>
+                  <span class="option-text">Vendería todo para no perder más. No tolero caídas.</span>
+                </div>
+              </label>
+              <label class="option-btn">
+                <input type="radio" name="tolerance" value="2">
+                <div class="option-content">
+                  <span class="option-title">Moderado</span>
+                  <span class="option-text">Esperaría a que recupere. Entiendo que hay volatilidad.</span>
+                </div>
+              </label>
+              <label class="option-btn">
+                <input type="radio" name="tolerance" value="3">
+                <div class="option-content">
+                  <span class="option-title">Agresivo</span>
+                  <span class="option-text">Compraría más barato. Las caídas son oportunidades.</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Dimension 2: Capacity -->
+          <div class="question-card">
+            <h3>Capacidad Financiera</h3>
+            <p class="question-desc">¿Qué tan estable es tu situación y de cuánto es tu fondo de emergencia?</p>
+            <div class="options-grid">
+              <label class="option-btn">
+                <input type="radio" name="capacity" value="1" checked>
+                <div class="option-content">
+                  <span class="option-title">Baja</span>
+                  <span class="option-text">Ingresos variables, sin fondo de reserva consolidado.</span>
+                </div>
+              </label>
+              <label class="option-btn">
+                <input type="radio" name="capacity" value="2">
+                <div class="option-content">
+                  <span class="option-title">Media</span>
+                  <span class="option-text">Trabajo estable, fondo de reserva de 3 a 6 meses de gastos.</span>
+                </div>
+              </label>
+              <label class="option-btn">
+                <input type="radio" name="capacity" value="3">
+                <div class="option-content">
+                  <span class="option-title">Alta</span>
+                  <span class="option-text">Múltiples fuentes de ingresos, fondo de reserva robusto.</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Dimension 3: Necessity -->
+          <div class="question-card">
+            <h3>Necesidad de Retorno</h3>
+            <p class="question-desc">¿Qué rendimiento anual necesitas para alcanzar tu meta financiera?</p>
+            <div class="options-grid">
+              <label class="option-btn">
+                <input type="radio" name="necessity" value="1" checked>
+                <div class="option-content">
+                  <span class="option-title">Baja</span>
+                  <span class="option-text">Preservar el poder adquisitivo (ej. superar la inflación).</span>
+                </div>
+              </label>
+              <label class="option-btn">
+                <input type="radio" name="necessity" value="2">
+                <div class="option-content">
+                  <span class="option-title">Media</span>
+                  <span class="option-text">Hacer crecer mi capital moderadamente en el tiempo.</span>
+                </div>
+              </label>
+              <label class="option-btn">
+                <input type="radio" name="necessity" value="3">
+                <div class="option-content">
+                  <span class="option-title">Alta</span>
+                  <span class="option-text">Maximizar el crecimiento para llegar a un objetivo ambicioso.</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Horizon Slider -->
+          <div class="question-card">
+            <h3>Horizonte de Inversión</h3>
+            <p class="question-desc">¿En cuántos años planeas retirar o usar este dinero?</p>
+            <div class="slider-container">
+              <div class="slider-value-display">
+                <span id="horizon-val">5</span> años
+              </div>
+              <input type="range" id="horizon-slider" min="1" max="30" value="5" class="range-slider">
+              <div class="slider-labels">
+                <span>1 año (Corto)</span>
+                <span>10 años (Mediano)</span>
+                <span>30 años (Largo)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STEP 2: Strategic Allocation Panel -->
+      <section id="panel-step-2" class="step-panel">
+        <div class="panel-header">
+          <h2>2. Asignación Estratégica Sugerida</h2>
+          <p>Tu perfil óptimo resultante basado en tus restricciones y adaptado a tu horizonte de inversión.</p>
+        </div>
+
+        <div class="allocation-grid">
+          <!-- Left side: Profiling Breakdown -->
+          <div class="card detail-card">
+            <h3>Cruce de Dimensiones</h3>
+            
+            <div class="metric-row">
+              <span class="label">Tolerancia al Riesgo:</span>
+              <span id="lbl-tolerance" class="val badge-profile">Moderado</span>
+            </div>
+            <div class="metric-row">
+              <span class="label">Capacidad Financiera:</span>
+              <span id="lbl-capacity" class="val badge-profile">Conservador</span>
+            </div>
+            <div class="metric-row">
+              <span class="label">Necesidad de Retorno:</span>
+              <span id="lbl-necessity" class="val badge-profile">Agresivo</span>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <div class="result-box">
+              <h4>Perfil Consolidado (Regla del Mínimo):</h4>
+              <p id="lbl-final-profile" class="profile-highlight">CONSERVADOR</p>
+              <p class="explanation-text">Se selecciona la dimensión más restrictiva para evitar que asumas riesgos que tu situación financiera o tu tolerancia emocional no puedan soportar.</p>
+            </div>
+
+            <div class="result-box mt-4">
+              <h4>Moderación por Horizonte:</h4>
+              <p id="lbl-horizon-moderation" class="moderation-highlight">Sin moderación (5 años)</p>
+              <p id="lbl-moderation-desc" class="explanation-text">El horizonte temporal puede reducir la asignación máxima en renta variable si el plazo es insuficiente para recuperarse de posibles drawdowns.</p>
+            </div>
+          </div>
+
+          <!-- Right side: Allocation Chart & Weights -->
+          <div class="card chart-card flex-center-col">
+            <h3>Distribución de Activos</h3>
+            
+            <div class="allocation-donut-container">
+              <canvas id="allocation-donut-chart"></canvas>
+            </div>
+
+            <div class="allocation-legend-grid">
+              <div class="legend-item">
+                <span class="dot dot-equity"></span>
+                <span class="legend-name">Renta Variable</span>
+                <span id="allocation-pct-equity" class="legend-pct">80%</span>
+              </div>
+              <div class="legend-item">
+                <span class="dot dot-fixed"></span>
+                <span class="legend-name">Renta Fija</span>
+                <span id="allocation-pct-fixed" class="legend-pct">17%</span>
+              </div>
+              <div class="legend-item">
+                <span class="dot dot-cash"></span>
+                <span class="legend-name">Liquidez</span>
+                <span id="allocation-pct-cash" class="legend-pct">3%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STEP 3: Asset Selector Panel -->
+      <section id="panel-step-3" class="step-panel">
+        <div class="panel-header">
+          <h2>3. Selección y Ponderación de Activos</h2>
+          <p>Diseño de arquitectura núcleo-satélite para evitar sobre-concentración y maximización de errores de estimación.</p>
+        </div>
+
+        <div class="builder-grid">
+          <!-- Selection Tools -->
+          <div class="card selection-tools">
+            <h3>Buscar e Incorporar Activos</h3>
+            
+            <!-- Market filter pills -->
+            <div class="market-filters">
+              <button class="filter-pill active" data-market="all">Todos</button>
+              <button class="filter-pill" data-market="us">Estados Unidos (US)</button>
+              <button class="filter-pill" data-market="argentina">Argentina (BYMA)</button>
+              <button class="filter-pill" data-market="crypto">Criptomonedas</button>
+            </div>
+
+            <!-- Search box -->
+            <div class="search-container">
+              <input type="text" id="asset-search-input" placeholder="Buscar por ticker o empresa (ej: SPY, GGAL, BTC-USD)..." autocomplete="off">
+              <div id="search-results-dropdown" class="search-dropdown hidden"></div>
+            </div>
+
+            <div class="helper-box">
+              <h5>Guía del Método:</h5>
+              <ul>
+                <li><strong>El Núcleo (Core):</strong> Debe ser un activo altamente diversificado (ej. S&P 500 como <code>^GSPC</code> o <code>SPY</code>). Ponderación sugerida: 20% - 40%.</li>
+                <li><strong>Los Satélites (Satellites):</strong> Activos de convicción individual (ej. acciones, criptos). Se acota cada uno a un <strong>máximo del 15%</strong> (sugerido 14%) para robustez.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Active Portfolio Allocation -->
+          <div class="card portfolio-weights-card">
+            <h3>Tu Cartera de Renta Variable (<span id="total-equity-target-label">80</span>%)</h3>
+            
+            <!-- Asset Lists -->
+            <div class="portfolio-list-wrapper">
+              
+              <!-- Core Section -->
+              <div class="portfolio-section">
+                <h4>Activo Núcleo (Core) <span class="badge-core">1 requerido</span></h4>
+                <div id="core-asset-container" class="asset-slot-empty">
+                  <p class="empty-text">Buscá y asigná un activo como Núcleo de tu cartera.</p>
+                </div>
+              </div>
+
+              <!-- Satellites Section -->
+              <div class="portfolio-section">
+                <h4>Activos Satélites (Convicción) <span class="badge-sat">Máx. 5</span></h4>
+                <div id="satellites-assets-container" class="satellites-list">
+                  <!-- Dynamic slots -->
+                  <p class="empty-text" id="satellites-empty-text">Buscá y sumá activos satélites para complementar tu núcleo.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Remaining Asset Allocation (Fixed + Cash) -->
+            <div class="portfolio-section fixed-cash-preview">
+              <h4>Colchón Automático (Renta Fija + Liquidez)</h4>
+              <div class="fixed-cash-row">
+                <div class="fixed-cash-item">
+                  <span class="label">Renta Fija (Bonos/FCI)</span>
+                  <span id="portfolio-weight-fixed" class="val">17%</span>
+                </div>
+                <div class="fixed-cash-item">
+                  <span class="label">Liquidez (Tasa de Interés)</span>
+                  <span id="portfolio-weight-cash" class="val">3%</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Validation Bar -->
+            <div class="validation-bar">
+              <div class="validation-info">
+                <span>Total Asignado a Acciones:</span>
+                <span id="summed-equity-weight" class="weight-status font-bold">0%</span>
+                <span>/</span>
+                <span id="target-equity-weight" class="font-bold">80%</span>
+              </div>
+              <div class="progress-track">
+                <div id="progress-bar-fill" class="progress-fill" style="width: 0%"></div>
+              </div>
+              <div id="portfolio-error-msg" class="validation-error-msg hidden"></div>
+          </div>
+        </div>
+
+        <!-- Portfolio Diversification Analysis & Guidance -->
+        <div class="card analysis-guidance-card mt-4">
+          <h3>Guía de Selección de Activos & Análisis de Diversificación</h3>
+          <p class="chart-desc" style="margin-bottom: 1.5rem;">Análisis en tiempo real de tu cartera a medida que seleccionás los activos.</p>
+          <div class="guidance-grid">
+            <!-- Sector Allocation -->
+            <div class="guidance-col">
+              <h4>Distribución Sectorial</h4>
+              <div id="portfolio-sector-distribution" class="sector-distribution-list">
+                <p class="empty-text">Agregá activos para ver la distribución por sectores.</p>
+              </div>
+            </div>
+            <!-- Correlations -->
+            <div class="guidance-col">
+              <h4>Matriz de Correlación</h4>
+              <div id="portfolio-correlation-matrix" class="correlation-matrix-wrapper">
+                <p class="empty-text">Agregá más de 1 activo para analizar correlaciones.</p>
+              </div>
+            </div>
+            <!-- Assistant Advice -->
+            <div class="guidance-col">
+              <h4>Consejo de Asignación (Asistente)</h4>
+              <div id="portfolio-assistant-advice" class="assistant-advice-box">
+                <p class="empty-text">El asistente de inversión analizará tu perfil y tus activos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STEP 4: Simulation Panel -->
+      <section id="panel-step-4" class="step-panel">
+        <div class="panel-header">
+          <h2>4. Frontera y Simulación de Monte Carlo</h2>
+          <p>Análisis cuantitativo de riesgo/retorno histórico y proyección probabilística de tu capital.</p>
+        </div>
+
+        <!-- Mode Selector for custom return calculation -->
+        <div class="calc-mode-selector-card card">
+          <div class="mode-flex">
+            <div>
+              <h3>Doble Canal de Cálculo</h3>
+              <p class="mode-desc">Elegí si querés calcular la proyección con el rendimiento histórico puro o personalizar las expectativas de cada activo.</p>
+            </div>
+            <div class="mode-toggle-group">
+              <button id="btn-mode-historical" class="toggle-btn active">Promedio Histórico</button>
+              <button id="btn-mode-custom" class="toggle-btn">Expectativas Personalizadas</button>
+            </div>
+          </div>
+
+          <!-- Dynamic custom returns input area -->
+          <div id="custom-returns-inputs-container" class="custom-inputs-grid hidden">
+            <!-- Inputs populated dynamically by JavaScript -->
+          </div>
+        </div>
+
+        <!-- Simulation Grid -->
+        <div class="simulation-grid">
+          
+          <!-- Key Metrics -->
+          <div class="metrics-summary-grid">
+            <div class="metric-card card">
+              <span class="metric-title">Retorno Esperado Anual</span>
+              <span id="metric-expected-return" class="metric-val">--</span>
+              <span class="metric-desc">Ponderado en USD</span>
+            </div>
+            <div class="metric-card card">
+              <span class="metric-title">Volatilidad de Cartera</span>
+              <span id="metric-volatility" class="metric-val">--</span>
+              <span class="metric-desc">Medida del riesgo anual</span>
+            </div>
+            <div class="metric-card card">
+              <span class="metric-title">Ratio de Sharpe</span>
+              <span id="metric-sharpe" class="metric-val">--</span>
+              <span class="metric-desc">Retorno / Riesgo (Rf 4.3%)</span>
+            </div>
+            <div class="metric-card card">
+              <span class="metric-title">Beta de la Cartera</span>
+              <span id="metric-beta" class="metric-val">--</span>
+              <span class="metric-desc">Sensibilidad vs. S&P 500</span>
+            </div>
+          </div>
+
+          <!-- Diversification benefit -->
+          <div class="card diversification-card">
+            <div class="diversification-flex">
+              <div class="div-info">
+                <h3>El "Almuerzo Gratis" de la Diversificación</h3>
+                <p>Al combinar activos no correlacionados adecuadamente, logramos reducir la volatilidad de la cartera sin resignar el retorno esperado.</p>
+              </div>
+              <div class="div-stat-box">
+                <span class="stat-label">Riesgo Eliminado</span>
+                <span id="metric-risk-saved" class="stat-val">--</span>
+                <span class="stat-unit">puntos de volatilidad</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Capital inputs for Monte Carlo -->
+          <div class="card simulation-settings flex-row-wrap">
+            <div class="settings-group">
+              <label for="input-capital-inicial">Capital Inicial (USD):</label>
+              <input type="number" id="input-capital-inicial" value="100000" step="5000" min="1000">
+            </div>
+            <div class="settings-group">
+              <label for="sim-count-select">Simulaciones:</label>
+              <select id="sim-count-select">
+                <option value="5000">5.000 corridas (Rápido)</option>
+                <option value="10000">10.000 corridas</option>
+                <option value="20000" selected>20.000 corridas (Máx. Precisión)</option>
+              </select>
+            </div>
+            <button id="btn-run-simulation" class="btn btn-primary run-btn">Simular Escenarios</button>
+          </div>
+
+          <!-- Charts -->
+          <div class="card chart-panel">
+            <h3>Caminos de Crecimiento Posibles</h3>
+            <p class="chart-desc">Muestra de 50 trayectorias aleatorias simulando el comportamiento del mercado sobre el horizonte de inversión.</p>
+            <div class="chart-canvas-wrapper">
+              <canvas id="chart-paths"></canvas>
+            </div>
+          </div>
+
+          <div class="card chart-panel">
+            <h3>Distribución de Escenarios Finales</h3>
+            <p class="chart-desc">Probabilidad de terminar con diferentes niveles de capital al final del período.</p>
+            <div class="chart-canvas-wrapper">
+              <canvas id="chart-distribution"></canvas>
+            </div>
+          </div>
+
+          <!-- Scenario metrics output -->
+          <div class="card simulation-results-summary">
+            <h3>20.000 finales posibles</h3>
+            
+            <div class="scenario-results-grid">
+              
+              <div class="scenario-item central">
+                <div class="scenario-header">
+                  <span class="icon">📈</span>
+                  <h4>El Escenario Central (Mediana)</h4>
+                </div>
+                <div class="scenario-val-box">
+                  <span id="sim-res-median-capital" class="val">--</span>
+                  <span class="desc">Mediana a <span id="sim-res-years-label">5</span> años (CAGR <span id="sim-res-cagr">--</span>)</span>
+                </div>
+                <p class="scenario-desc-text">Hay un 50% de probabilidad de terminar con más de este monto y un 50% de probabilidad de terminar con menos.</p>
+              </div>
+
+              <div class="scenario-item success">
+                <div class="scenario-header">
+                  <span class="icon">⭐</span>
+                  <h4>Probabilidad de Éxito</h4>
+                </div>
+                <div class="scenario-val-box">
+                  <span id="sim-res-success-prob" class="val">--</span>
+                  <span class="desc">De ganarle al capital inicial</span>
+                </div>
+                <p class="scenario-desc-text">Proporción de simulaciones que finalizaron con un valor neto superior a la inversión de partida.</p>
+              </div>
+
+              <div class="scenario-item downside">
+                <div class="scenario-header">
+                  <span class="icon">⚠️</span>
+                  <h4>El Peor Escenario (Percentil P5)</h4>
+                </div>
+                <div class="scenario-val-box">
+                  <span id="sim-res-p5-capital" class="val">--</span>
+                  <span class="desc">Pérdida máxima esperada al 95%</span>
+                </div>
+                <p class="scenario-desc-text">En el peor 5% de los escenarios simulados, tu capital finalizó por debajo de este valor. Este es el riesgo real asumido.</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Bottom Navigation Bar -->
+    <footer class="app-nav">
+      <button id="btn-nav-prev" class="btn btn-secondary" disabled>Atrás</button>
+      <button id="btn-nav-next" class="btn btn-primary">Siguiente</button>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

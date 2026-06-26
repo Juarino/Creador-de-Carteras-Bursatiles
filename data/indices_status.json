@@ -1,0 +1,1633 @@
+{
+  "^GSPC": {
+    "symbol": "^GSPC",
+    "compania": "S&P 500 Index",
+    "panel": "Índice",
+    "sector": "Índices",
+    "industry": "Benchmark",
+    "moneda": "USD",
+    "mercado": "EE.UU.",
+    "timeframes": {
+      "1D": {
+        "bias": "BAJISTA",
+        "fase": "MANIPULACION",
+        "precio_tipo": "Discount",
+        "sweep": "SI",
+        "high": 7530.01,
+        "low": 7461.04,
+        "close": 7472.67,
+        "open": 7500.44,
+        "lvl_75": 7478.28,
+        "lvl_50": 7495.52,
+        "lvl_25": 7512.77,
+        "mecha_l": 7480.74,
+        "mecha_h": 7515.22,
+        "prev_high": 7511.07,
+        "prev_low": 7468.32,
+        "prev_open": 7487.36,
+        "prev_close": 7500.58,
+        "next_erl_highs": [
+          {
+            "price": 7539.09,
+            "date": "2026-05-26"
+          },
+          {
+            "price": 7577.92,
+            "date": "2026-06-15"
+          },
+          {
+            "price": 7620.9,
+            "date": "2026-06-02"
+          }
+        ],
+        "next_erl_lows": [
+          {
+            "price": 7402.61,
+            "date": "2026-06-17"
+          },
+          {
+            "price": 7368.63,
+            "date": "2026-06-05"
+          },
+          {
+            "price": 7338.54,
+            "date": "2026-05-12"
+          },
+          {
+            "price": 7333.68,
+            "date": "2026-05-19"
+          },
+          {
+            "price": 7257.33,
+            "date": "2026-06-11"
+          }
+        ],
+        "velas_internas": []
+      },
+      "1S": {
+        "bias": "LATERAL",
+        "fase": "ACUMULACION",
+        "precio_tipo": "PRECIO BARATO",
+        "sweep": "NO",
+        "high": 7530.01,
+        "low": 7461.04,
+        "close": 7472.67,
+        "open": 7500.44,
+        "lvl_75": 7478.28,
+        "lvl_50": 7495.52,
+        "lvl_25": 7512.77,
+        "mecha_l": 7480.74,
+        "mecha_h": 7515.22,
+        "prev_high": 7577.92,
+        "prev_low": 7402.61,
+        "prev_open": 7516.75,
+        "prev_close": 7500.58,
+        "next_erl_highs": [
+          {
+            "price": 7577.92,
+            "date": "2026-06-21"
+          },
+          {
+            "price": 7620.9,
+            "date": "2026-06-07"
+          }
+        ],
+        "next_erl_lows": [
+          {
+            "price": 7333.68,
+            "date": "2026-05-24"
+          },
+          {
+            "price": 7237.85,
+            "date": "2026-06-14"
+          },
+          {
+            "price": 6824.31,
+            "date": "2026-01-04"
+          },
+          {
+            "price": 6789.05,
+            "date": "2026-01-25"
+          },
+          {
+            "price": 6780.13,
+            "date": "2026-02-08"
+          }
+        ],
+        "velas_internas": [
+          {
+            "fecha": "2026-06-15",
+            "open": 7516.75,
+            "high": 7577.92,
+            "low": 7516.75,
+            "close": 7554.29
+          },
+          {
+            "fecha": "2026-06-16",
+            "open": 7548.78,
+            "high": 7564.96,
+            "low": 7508.68,
+            "close": 7511.35
+          },
+          {
+            "fecha": "2026-06-17",
+            "open": 7524.5,
+            "high": 7532.17,
+            "low": 7402.61,
+            "close": 7420.1
+          },
+          {
+            "fecha": "2026-06-18",
+            "open": 7487.36,
+            "high": 7511.07,
+            "low": 7468.32,
+            "close": 7500.58
+          }
+        ]
+      },
+      "1M": {
+        "bias": "BAJISTA",
+        "fase": "MANIPULACION",
+        "precio_tipo": "PRECIO CARO",
+        "sweep": "SI",
+        "high": 7620.9,
+        "low": 7237.85,
+        "close": 7472.67,
+        "open": 7582.29,
+        "lvl_75": 7333.61,
+        "lvl_50": 7429.38,
+        "lvl_25": 7525.14,
+        "mecha_l": 7410.07,
+        "mecha_h": 7601.59,
+        "prev_high": 7599.38,
+        "prev_low": 7174.12,
+        "prev_open": 7234.54,
+        "prev_close": 7580.06,
+        "next_erl_highs": [],
+        "next_erl_lows": [
+          {
+            "price": 6521.92,
+            "date": "2025-11-01"
+          },
+          {
+            "price": 6316.91,
+            "date": "2026-03-01"
+          },
+          {
+            "price": 5773.31,
+            "date": "2025-01-01"
+          },
+          {
+            "price": 5119.26,
+            "date": "2024-08-01"
+          },
+          {
+            "price": 4835.04,
+            "date": "2025-04-01"
+          }
+        ],
+        "velas_internas": [
+          {
+            "fecha": "2026-05-03",
+            "open": 7152.72,
+            "high": 7272.52,
+            "low": 7107.86,
+            "close": 7230.12
+          },
+          {
+            "fecha": "2026-05-10",
+            "open": 7228.38,
+            "high": 7401.5,
+            "low": 7174.12,
+            "close": 7398.93
+          },
+          {
+            "fecha": "2026-05-17",
+            "open": 7385.31,
+            "high": 7517.12,
+            "low": 7338.54,
+            "close": 7408.5
+          },
+          {
+            "fecha": "2026-05-24",
+            "open": 7415.07,
+            "high": 7506.32,
+            "low": 7333.68,
+            "close": 7473.47
+          },
+          {
+            "fecha": "2026-05-31",
+            "open": 7511.79,
+            "high": 7599.38,
+            "low": 7499.72,
+            "close": 7580.06
+          }
+        ]
+      },
+      "3M": {
+        "bias": "BAJISTA",
+        "fase": "MANIPULACION",
+        "precio_tipo": "PRECIO CARO",
+        "sweep": "SI",
+        "high": 7620.9,
+        "low": 7237.85,
+        "close": 7472.67,
+        "open": 7582.29,
+        "lvl_75": 7333.61,
+        "lvl_50": 7429.38,
+        "lvl_25": 7525.14,
+        "mecha_l": 7410.07,
+        "mecha_h": 7601.59,
+        "prev_high": 7599.38,
+        "prev_low": 6316.91,
+        "prev_open": 6824.36,
+        "prev_close": 7580.06,
+        "next_erl_highs": [],
+        "next_erl_lows": [
+          {
+            "price": 6316.91,
+            "date": "2026-03-01"
+          },
+          {
+            "price": 4835.04,
+            "date": "2025-03-01"
+          }
+        ],
+        "velas_internas": [
+          {
+            "fecha": "2026-03-01",
+            "open": 6824.36,
+            "high": 6901.01,
+            "low": 6316.91,
+            "close": 6528.52
+          },
+          {
+            "fecha": "2026-04-01",
+            "open": 6556.56,
+            "high": 7219.83,
+            "low": 6474.94,
+            "close": 7209.01
+          },
+          {
+            "fecha": "2026-05-01",
+            "open": 7234.54,
+            "high": 7599.38,
+            "low": 7174.12,
+            "close": 7580.06
+          }
+        ]
+      },
+      "6M": {
+        "bias": "BAJISTA",
+        "fase": "MANIPULACION",
+        "precio_tipo": "PRECIO CARO",
+        "sweep": "SI",
+        "high": 7620.9,
+        "low": 7237.85,
+        "close": 7472.67,
+        "open": 7582.29,
+        "lvl_75": 7333.61,
+        "lvl_50": 7429.38,
+        "lvl_25": 7525.14,
+        "mecha_l": 7410.07,
+        "mecha_h": 7601.59,
+        "prev_high": 7599.38,
+        "prev_low": 6316.91,
+        "prev_open": 6812.3,
+        "prev_close": 7580.06,
+        "next_erl_highs": [],
+        "next_erl_lows": [
+          {
+            "price": 4835.04,
+            "date": "2024-12-01"
+          }
+        ],
+        "velas_internas": [
+          {
+            "fecha": "2025-12-01",
+            "open": 6812.3,
+            "high": 7002.28,
+            "low": 6720.43,
+            "close": 6878.88
+          },
+          {
+            "fecha": "2026-03-01",
+            "open": 6824.36,
+            "high": 7599.38,
+            "low": 6316.91,
+            "close": 7580.06
+          }
+        ]
+      },
+      "1Y": {
+        "bias": "ALCISTA",
+        "fase": "DISTRIBUCION",
+        "precio_tipo": "PRECIO CARO",
+        "sweep": "SI",
+        "high": 7620.9,
+        "low": 6316.91,
+        "close": 7472.67,
+        "open": 6878.11,
+        "lvl_75": 6642.91,
+        "lvl_50": 6968.9,
+        "lvl_25": 7294.9,
+        "mecha_l": 6597.51,
+        "mecha_h": 7249.5,
+        "prev_high": 6945.77,
+        "prev_low": 4835.04,
+        "prev_open": 5903.26,
+        "prev_close": 6845.5,
+        "next_erl_highs": [],
+        "next_erl_lows": [
+          {
+            "price": 4835.04,
+            "date": "2025-01-01"
+          }
+        ],
+        "velas_internas": [
+          {
+            "fecha": "2025-06-01",
+            "open": 5896.68,
+            "high": 6920.34,
+            "low": 5861.43,
+            "close": 6849.09
+          },
+          {
+            "fecha": "2025-12-01",
+            "open": 6812.3,
+            "high": 7599.38,
+            "low": 6316.91,
+            "close": 7580.06
+          }
+        ]
+      }
+    },
+    "metrics": {
+      "gaps": [
+        {
+          "date": "2026-06-18",
+          "type": "up",
+          "gap_low": 7420.1,
+          "gap_high": 7487.36,
+          "ce": 7453.73,
+          "lvl_25": 7436.92,
+          "lvl_75": 7470.54
+        }
+      ],
+      "dealing_range": {
+        "swing_high": {
+          "date": "2026-06-15",
+          "price": 7577.92
+        },
+        "swing_low": {
+          "date": "2026-06-17",
+          "price": 7402.61
+        },
+        "equilibrium": 7490.26,
+        "dr_high": 7577.92,
+        "dr_low": 7402.61
+      },
+      "fvgs": [],
+      "smt_divergences": {
+        "daily": [
+          {
+            "date": "2026-06-18",
+            "type": "bearish",
+            "partner": "^IXIC",
+            "details": "^GSPC vs ^IXIC: Bearish SMT divergence at 2026-06-18"
+          }
+        ],
+        "weekly": []
+      },
+      "weekly_profile": "Consolidation / Unknown"
+    },
+    "statistics": {
+      "adr_20": 83.28,
+      "current_range": 68.97,
+      "adr_ratio": 0.83,
+      "gap_fill_probability": 76.35,
+      "bias_edge_probability": 48.12,
+      "scenarios": {
+        "bullish_expansion": 52.12,
+        "bullish_judas": 45.56,
+        "bearish_expansion": 42.71,
+        "bearish_judas": 37.5
+      },
+      "sweep_reversal_edge": {
+        "bullish_success_rate": 61.86,
+        "bearish_success_rate": 58.18,
+        "active_alert": "COMPRA",
+        "active_probability": 61.86
+      }
+    }
+  },
+  "^IXIC": {
+    "symbol": "^IXIC",
+    "compania": "Nasdaq Composite",
+    "panel": "Índice",
+    "sector": "Índices",
+    "industry": "Benchmark",
+    "moneda": "USD",
+    "mercado": "EE.UU.",
+    "timeframes": {
+      "1D": {
+        "bias": "BAJISTA",
+        "fase": "MANIPULACION",
+        "precio_tipo": "Discount",
+        "sweep": "SI",
+        "high": 26561.12,
+        "low": 26156.46,
+        "close": 26194.24,
+        "open": 26483.31,
+        "lvl_75": 26257.62,
+        "lvl_50": 26358.79,
+        "lvl_25": 26459.95,
+        "mecha_l": 26319.88,
+        "mecha_h": 26522.21,
+        "prev_high": 26559.74,
+        "prev_low": 26188.69,
+        "prev_open": 26410.62,
+        "prev_close": 26517.93,
+        "next_erl_highs": [
+          {
+            "price": 26707.14,
+            "date": "2026-05-14"
+          },
+          {
+            "price": 26725.29,
+            "date": "2026-05-26"
+          },
+          {
+            "price": 26788.62,
+            "date": "2026-06-16"
+          },
+          {
+            "price": 27190.21,
+            "date": "2026-06-01"
+          }
+        ],
+        "next_erl_lows": [
+          {
+            "price": 25960.41,
+            "date": "2026-06-17"
+          },
+          {
+            "price": 25739.22,
+            "date": "2026-05-12"
+          },
+          {
+            "price": 25701.44,
+            "date": "2026-05-19"
+          },
+          {
+            "price": 25648.47,
+            "date": "2026-06-05"
+          },
+          {
+            "price": 25109.39,
+            "date": "2026-06-11"
+          }
+        ],
+        "velas_internas": []
+      },
+      "1S": {
+        "bias": "LATERAL",
+        "fase": "ACUMULACION",
+        "precio_tipo": "PRECIO BARATO",
+        "sweep": "NO",
+        "high": 26561.12,
+        "low": 26156.46,
+        "close": 26194.24,
+        "open": 26483.31,
+        "lvl_75": 26257.62,
+        "lvl_50": 26358.79,
+        "lvl_25": 26459.95,
+        "mecha_l": 26319.88,
+        "mecha_h": 26522.21,
+        "prev_high": 26788.62,
+        "prev_low": 25960.41,
+        "prev_open": 26447.23,
+        "prev_close": 26517.93,
+        "next_erl_highs": [
+          {
+            "price": 26707.14,
+            "date": "2026-05-17"
+          },
+          {
+            "price": 26788.62,
+            "date": "2026-06-21"
+          },
+          {
+            "price": 27190.21,
+            "date": "2026-06-07"
+          }
+        ],
+        "next_erl_lows": [
+          {
+            "price": 25701.44,
+            "date": "2026-05-24"
+          },
+          {
+            "price": 24980.38,
+            "date": "2026-06-14"
+          },
+          {
+            "price": 23119.49,
+            "date": "2026-01-04"
+          },
+          {
+            "price": 22916.83,
+            "date": "2026-01-25"
+          },
+          {
+            "price": 22692.0,
+            "date": "2025-12-21"
+          }
+        ],
+        "velas_internas": [
+          {
+            "fecha": "2026-06-15",
+            "open": 26447.23,
+            "high": 26687.56,
+            "low": 26438.77,
+            "close": 26683.94
+          },
+          {
+            "fecha": "2026-06-16",
+            "open": 26649.97,
+            "high": 26788.62,
+            "low": 26369.39,
+            "close": 26376.34
+          },
+          {
+            "fecha": "2026-06-17",
+            "open": 26493.82,
+            "high": 26511.55,
+            "low": 25960.41,
+            "close": 26021.66
+          },
+          {
+            "fecha": "2026-06-18",
+            "open": 26410.62,
+            "high": 26559.74,
+            "low": 26188.69,
+            "close": 26517.93
+          }
+        ]
+      },
+      "1M": {
+        "bias": "BAJISTA",
+        "fase": "MANIPULACION",
+        "precio_tipo": "PRECIO CARO",
+        "sweep": "SI",
+        "high": 27190.21,
+        "low": 24980.38,
+        "close": 26194.24,
+        "open": 26952.58,
+        "lvl_75": 25532.84,
+        "lvl_50": 26085.29,
+        "lvl_25": 26637.75,
+        "mecha_l": 25966.48,
+        "mecha_h": 27071.4,
+        "prev_high": 27094.8,
+        "prev_low": 24913.12,
+        "prev_open": 24977.79,
+        "prev_close": 26972.62,
+        "next_erl_highs": [],
+        "next_erl_lows": [
+          {
+            "price": 21898.29,
+            "date": "2025-11-01"
+          },
+          {
+            "price": 20690.25,
+            "date": "2026-03-01"
+          },
+          {
+            "price": 15708.54,
+            "date": "2024-08-01"
+          },
+          {
+            "price": 14784.03,
+            "date": "2025-04-01"
+          }
+        ],
+        "velas_internas": [
+          {
+            "fecha": "2026-05-03",
+            "open": 24799.64,
+            "high": 25223.12,
+            "low": 24491.83,
+            "close": 25114.44
+          },
+          {
+            "fecha": "2026-05-10",
+            "open": 25112.18,
+            "high": 26248.62,
+            "low": 24913.12,
+            "close": 26247.08
+          },
+          {
+            "fecha": "2026-05-17",
+            "open": 26135.63,
+            "high": 26707.14,
+            "low": 25739.22,
+            "close": 26225.14
+          },
+          {
+            "fecha": "2026-05-24",
+            "open": 26289.49,
+            "high": 26504.55,
+            "low": 25701.44,
+            "close": 26343.97
+          },
+          {
+            "fecha": "2026-05-31",
+            "open": 26590.5,
+            "high": 27094.8,
+            "low": 26520.3,
+            "close": 26972.62
+          }
+        ]
+      },
+      "3M": {
+        "bias": "BAJISTA",
+        "fase": "MANIPULACION",
+        "precio_tipo": "PRECIO CARO",
+        "sweep": "SI",
+        "high": 27190.21,
+        "low": 24980.38,
+        "close": 26194.24,
+        "open": 26952.58,
+        "lvl_75": 25532.84,
+        "lvl_50": 26085.29,
+        "lvl_25": 26637.75,
+        "mecha_l": 25966.48,
+        "mecha_h": 27071.4,
+        "prev_high": 27094.8,
+        "prev_low": 20690.25,
+        "prev_open": 22322.12,
+        "prev_close": 26972.62,
+        "next_erl_highs": [],
+        "next_erl_lows": [
+          {
+            "price": 20690.25,
+            "date": "2026-03-01"
+          },
+          {
+            "price": 14784.03,
+            "date": "2025-03-01"
+          }
+        ],
+        "velas_internas": [
+          {
+            "fecha": "2026-03-01",
+            "open": 22322.12,
+            "high": 22906.72,
+            "low": 20690.25,
+            "close": 21590.63
+          },
+          {
+            "fecha": "2026-04-01",
+            "open": 21742.79,
+            "high": 24935.6,
+            "low": 21371.32,
+            "close": 24892.31
+          },
+          {
+            "fecha": "2026-05-01",
+            "open": 24977.79,
+            "high": 27094.8,
+            "low": 24913.12,
+            "close": 26972.62
+          }
+        ]
+      },
+      "6M": {
+        "bias": "BAJISTA",
+        "fase": "MANIPULACION",
+        "precio_tipo": "PRECIO CARO",
+        "sweep": "SI",
+        "high": 27190.21,
+        "low": 24980.38,
+        "close": 26194.24,
+        "open": 26952.58,
+        "lvl_75": 25532.84,
+        "lvl_50": 26085.29,
+        "lvl_25": 26637.75,
+        "mecha_l": 25966.48,
+        "mecha_h": 27071.4,
+        "prev_high": 27094.8,
+        "prev_low": 20690.25,
+        "prev_open": 23172.34,
+        "prev_close": 26972.62,
+        "next_erl_highs": [],
+        "next_erl_lows": [
+          {
+            "price": 14784.03,
+            "date": "2024-12-01"
+          }
+        ],
+        "velas_internas": [
+          {
+            "fecha": "2025-12-01",
+            "open": 23172.34,
+            "high": 23988.27,
+            "low": 22256.76,
+            "close": 22668.21
+          },
+          {
+            "fecha": "2026-03-01",
+            "open": 22322.12,
+            "high": 27094.8,
+            "low": 20690.25,
+            "close": 26972.62
+          }
+        ]
+      },
+      "1Y": {
+        "bias": "ALCISTA",
+        "fase": "DISTRIBUCION",
+        "precio_tipo": "PRECIO CARO",
+        "sweep": "SI",
+        "high": 27190.21,
+        "low": 20690.25,
+        "close": 26194.24,
+        "open": 23481.49,
+        "lvl_75": 22315.24,
+        "lvl_50": 23940.23,
+        "lvl_25": 25565.22,
+        "mecha_l": 22085.87,
+        "mecha_h": 25335.85,
+        "prev_high": 24019.99,
+        "prev_low": 14784.03,
+        "prev_open": 19403.9,
+        "prev_close": 23241.99,
+        "next_erl_highs": [],
+        "next_erl_lows": [
+          {
+            "price": 14784.03,
+            "date": "2025-01-01"
+          }
+        ],
+        "velas_internas": [
+          {
+            "fecha": "2025-06-01",
+            "open": 19063.06,
+            "high": 24019.99,
+            "low": 18985.3,
+            "close": 23365.69
+          },
+          {
+            "fecha": "2025-12-01",
+            "open": 23172.34,
+            "high": 27094.8,
+            "low": 20690.25,
+            "close": 26972.62
+          }
+        ]
+      }
+    },
+    "metrics": {
+      "gaps": [
+        {
+          "date": "2026-06-18",
+          "type": "up",
+          "gap_low": 26021.66,
+          "gap_high": 26410.62,
+          "ce": 26216.14,
+          "lvl_25": 26118.9,
+          "lvl_75": 26313.38
+        }
+      ],
+      "dealing_range": {
+        "swing_high": {
+          "date": "2026-06-16",
+          "price": 26788.62
+        },
+        "swing_low": {
+          "date": "2026-06-17",
+          "price": 25960.41
+        },
+        "equilibrium": 26374.52,
+        "dr_high": 26788.62,
+        "dr_low": 25960.41
+      },
+      "fvgs": [
+        {
+          "date": "2026-06-04",
+          "type": "bearish",
+          "top": 26932.77,
+          "bottom": 26923.7,
+          "ce": 26928.24
+        }
+      ],
+      "smt_divergences": {
+        "daily": [
+          {
+            "date": "2026-06-18",
+            "type": "bearish",
+            "partner": "^GSPC",
+            "details": "^IXIC vs ^GSPC: Bearish SMT divergence at 2026-06-18"
+          }
+        ],
+        "weekly": []
+      },
+      "weekly_profile": "Consolidation / Unknown"
+    },
+    "statistics": {
+      "adr_20": 431.94,
+      "current_range": 404.66,
+      "adr_ratio": 0.94,
+      "gap_fill_probability": 75.15,
+      "bias_edge_probability": 47.22,
+      "scenarios": {
+        "bullish_expansion": 52.67,
+        "bullish_judas": 50.38,
+        "bearish_expansion": 39.57,
+        "bearish_judas": 37.97
+      },
+      "sweep_reversal_edge": {
+        "bullish_success_rate": 69.41,
+        "bearish_success_rate": 56.07,
+        "active_alert": "COMPRA",
+        "active_probability": 69.41
+      }
+    }
+  },
+  "^DJI": {
+    "symbol": "^DJI",
+    "compania": "Dow Jones Industrials",
+    "panel": "Índice",
+    "sector": "Índices",
+    "industry": "Benchmark",
+    "moneda": "USD",
+    "mercado": "EE.UU.",
+    "timeframes": {
+      "1D": {
+        "bias": "LATERAL",
+        "fase": "ACUMULACION",
+        "precio_tipo": "Discount",
+        "sweep": "NO",
+        "high": 51887.85,
+        "low": 51555.19,
+        "close": 51711.76,
+        "open": 51555.19,
+        "lvl_75": 51638.36,
+        "lvl_50": 51721.52,
+        "lvl_25": 51804.69,
+        "mecha_l": 51555.19,
+        "mecha_h": 51721.52,
+        "prev_high": 51949.26,
+        "prev_low": 51554.53,
+        "prev_open": 51571.85,
+        "prev_close": 51564.7,
+        "next_erl_highs": [
+          {
+            "price": 52281.19,
+            "date": "2026-06-17"
+          }
+        ],
+        "next_erl_lows": [
+          {
+            "price": 51392.58,
+            "date": "2026-06-17"
+          },
+          {
+            "price": 50687.07,
+            "date": "2026-06-03"
+          },
+          {
+            "price": 50356.64,
+            "date": "2026-05-26"
+          },
+          {
+            "price": 50314.34,
+            "date": "2026-05-28"
+          },
+          {
+            "price": 49909.07,
+            "date": "2026-06-10"
+          }
+        ],
+        "velas_internas": []
+      },
+      "1S": {
+        "bias": "LATERAL",
+        "fase": "ACUMULACION",
+        "precio_tipo": "PRECIO BARATO",
+        "sweep": "NO",
+        "high": 51887.85,
+        "low": 51555.19,
+        "close": 51711.76,
+        "open": 51555.19,
+        "lvl_75": 51638.36,
+        "lvl_50": 51721.52,
+        "lvl_25": 51804.69,
+        "mecha_l": 51555.19,
+        "mecha_h": 51721.52,
+        "prev_high": 52281.19,
+        "prev_low": 51364.55,
+        "prev_open": 51364.55,
+        "prev_close": 51564.7,
+        "next_erl_highs": [
+          {
+            "price": 52281.19,
+            "date": "2026-06-21"
+          }
+        ],
+        "next_erl_lows": [
+          {
+            "price": 49909.07,
+            "date": "2026-06-14"
+          },
+          {
+            "price": 49235.74,
+            "date": "2026-05-24"
+          },
+          {
+            "price": 48708.57,
+            "date": "2026-05-03"
+          },
+          {
+            "price": 48428.13,
+            "date": "2026-01-25"
+          },
+          {
+            "price": 47853.04,
+            "date": "2026-01-04"
+          }
+        ],
+        "velas_internas": [
+          {
+            "fecha": "2026-06-15",
+            "open": 51364.55,
+            "high": 51945.89,
+            "low": 51364.55,
+            "close": 51671.03
+          },
+          {
+            "fecha": "2026-06-16",
+            "open": 51712.63,
+            "high": 52190.29,
+            "low": 51712.63,
+            "close": 51999.67
+          },
+          {
+            "fecha": "2026-06-17",
+            "open": 51937.56,
+            "high": 52281.19,
+            "low": 51392.58,
+            "close": 51492.55
+          },
+          {
+            "fecha": "2026-06-18",
+            "open": 51571.85,
+            "high": 51949.26,
+            "low": 51554.53,
+            "close": 51564.7
+          }
+        ]
+      },
+      "1M": {
+        "bias": "ALCISTA",
+        "fase": "DISTRIBUCION",
+        "precio_tipo": "PRECIO CARO",
+        "sweep": "SI",
+        "high": 52281.19,
+        "low": 49909.07,
+        "close": 51711.76,
+        "open": 51161.1,
+        "lvl_75": 50502.1,
+        "lvl_50": 51095.13,
+        "lvl_25": 51688.16,
+        "mecha_l": 50535.08,
+        "mecha_h": 51721.15,
+        "prev_high": 51094.18,
+        "prev_low": 48913.06,
+        "prev_open": 49832.57,
+        "prev_close": 51032.46,
+        "next_erl_highs": [],
+        "next_erl_lows": [
+          {
+            "price": 45057.28,
+            "date": "2026-03-01"
+          },
+          {
+            "price": 43340.68,
+            "date": "2025-08-01"
+          },
+          {
+            "price": 41844.89,
+            "date": "2025-01-01"
+          },
+          {
+            "price": 41647.3,
+            "date": "2024-11-01"
+          },
+          {
+            "price": 38499.27,
+            "date": "2024-08-01"
+          }
+        ],
+        "velas_internas": [
+          {
+            "fecha": "2026-05-03",
+            "open": 49112.2,
+            "high": 49988.56,
+            "low": 48708.57,
+            "close": 49499.27
+          },
+          {
+            "fecha": "2026-05-10",
+            "open": 49416.66,
+            "high": 50130.2,
+            "low": 48913.06,
+            "close": 49609.16
+          },
+          {
+            "fecha": "2026-05-17",
+            "open": 49549.07,
+            "high": 50200.54,
+            "low": 49307.66,
+            "close": 49526.17
+          },
+          {
+            "fecha": "2026-05-24",
+            "open": 49481.04,
+            "high": 50830.24,
+            "low": 49235.74,
+            "close": 50579.7
+          },
+          {
+            "fecha": "2026-05-31",
+            "open": 50686.15,
+            "high": 51094.18,
+            "low": 50314.34,
+            "close": 51032.46
+          }
+        ]
+      },
+      "3M": {
+        "bias": "ALCISTA",
+        "fase": "DISTRIBUCION",
+        "precio_tipo": "PRECIO CARO",
+        "sweep": "SI",
+        "high": 52281.19,
+        "low": 49909.07,
+        "close": 51711.76,
+        "open": 51161.1,
+        "lvl_75": 50502.1,
+        "lvl_50": 51095.13,
+        "lvl_25": 51688.16,
+        "mecha_l": 50535.08,
+        "mecha_h": 51721.15,
+        "prev_high": 51094.18,
+        "prev_low": 45057.28,
+        "prev_open": 48794.42,
+        "prev_close": 51032.46,
+        "next_erl_highs": [],
+        "next_erl_lows": [
+          {
+            "price": 45057.28,
+            "date": "2026-03-01"
+          },
+          {
+            "price": 36611.78,
+            "date": "2025-03-01"
+          }
+        ],
+        "velas_internas": [
+          {
+            "fecha": "2026-03-01",
+            "open": 48794.42,
+            "high": 49064.67,
+            "low": 45057.28,
+            "close": 46341.51
+          },
+          {
+            "fecha": "2026-04-01",
+            "open": 46396.12,
+            "high": 49848.69,
+            "low": 45897.24,
+            "close": 49652.14
+          },
+          {
+            "fecha": "2026-05-01",
+            "open": 49832.57,
+            "high": 51094.18,
+            "low": 48913.06,
+            "close": 51032.46
+          }
+        ]
+      },
+      "6M": {
+        "bias": "ALCISTA",
+        "fase": "DISTRIBUCION",
+        "precio_tipo": "PRECIO CARO",
+        "sweep": "SI",
+        "high": 52281.19,
+        "low": 49909.07,
+        "close": 51711.76,
+        "open": 51161.1,
+        "lvl_75": 50502.1,
+        "lvl_50": 51095.13,
+        "lvl_25": 51688.16,
+        "mecha_l": 50535.08,
+        "mecha_h": 51721.15,
+        "prev_high": 51094.18,
+        "prev_low": 45057.28,
+        "prev_open": 47580.85,
+        "prev_close": 51032.46,
+        "next_erl_highs": [],
+        "next_erl_lows": [
+          {
+            "price": 36611.78,
+            "date": "2024-12-01"
+          }
+        ],
+        "velas_internas": [
+          {
+            "fecha": "2025-12-01",
+            "open": 47580.85,
+            "high": 50512.79,
+            "low": 47263.92,
+            "close": 48977.92
+          },
+          {
+            "fecha": "2026-03-01",
+            "open": 48794.42,
+            "high": 51094.18,
+            "low": 45057.28,
+            "close": 51032.46
+          }
+        ]
+      },
+      "1Y": {
+        "bias": "ALCISTA",
+        "fase": "DISTRIBUCION",
+        "precio_tipo": "PRECIO CARO",
+        "sweep": "SI",
+        "high": 52281.19,
+        "low": 45057.28,
+        "close": 51711.76,
+        "open": 48105.98,
+        "lvl_75": 46863.26,
+        "lvl_50": 48669.24,
+        "lvl_25": 50475.21,
+        "mecha_l": 46581.63,
+        "mecha_h": 50193.59,
+        "prev_high": 48886.86,
+        "prev_low": 36611.78,
+        "prev_open": 42660.09,
+        "prev_close": 48063.29,
+        "next_erl_highs": [],
+        "next_erl_lows": [
+          {
+            "price": 36611.78,
+            "date": "2025-01-01"
+          }
+        ],
+        "velas_internas": [
+          {
+            "fecha": "2025-06-01",
+            "open": 42199.94,
+            "high": 48431.57,
+            "low": 41853.62,
+            "close": 47716.42
+          },
+          {
+            "fecha": "2025-12-01",
+            "open": 47580.85,
+            "high": 51094.18,
+            "low": 45057.28,
+            "close": 51032.46
+          }
+        ]
+      }
+    },
+    "metrics": {
+      "gaps": [
+        {
+          "date": "2026-06-18",
+          "type": "up",
+          "gap_low": 51492.55,
+          "gap_high": 51571.85,
+          "ce": 51532.2,
+          "lvl_25": 51512.38,
+          "lvl_75": 51552.03
+        }
+      ],
+      "dealing_range": {
+        "swing_high": {
+          "date": "2026-06-17",
+          "price": 52281.19
+        },
+        "swing_low": {
+          "date": "2026-06-17",
+          "price": 51392.58
+        },
+        "equilibrium": 51836.88,
+        "dr_high": 52281.19,
+        "dr_low": 51392.58
+      },
+      "fvgs": [
+        {
+          "date": "2026-06-12",
+          "type": "bullish",
+          "top": 50827.84,
+          "bottom": 50769.26,
+          "ce": 50798.55
+        },
+        {
+          "date": "2026-06-15",
+          "type": "bullish",
+          "top": 51364.55,
+          "bottom": 50968.95,
+          "ce": 51166.75
+        }
+      ],
+      "smt_divergences": {
+        "daily": [],
+        "weekly": []
+      },
+      "weekly_profile": "Consolidation / Unknown"
+    },
+    "statistics": {
+      "adr_20": 587.02,
+      "current_range": 332.66,
+      "adr_ratio": 0.57,
+      "gap_fill_probability": 78.56,
+      "bias_edge_probability": 48.19,
+      "scenarios": {
+        "bullish_expansion": 50.0,
+        "bullish_judas": 37.71,
+        "bearish_expansion": 46.12,
+        "bearish_judas": 37.38
+      },
+      "sweep_reversal_edge": {
+        "bullish_success_rate": 68.93,
+        "bearish_success_rate": 62.04,
+        "active_alert": "NINGUNA",
+        "active_probability": 0.0
+      }
+    }
+  },
+  "^MERV": {
+    "symbol": "^MERV",
+    "compania": "S&P Merval Index",
+    "panel": "Índice",
+    "sector": "Índices",
+    "industry": "Benchmark",
+    "moneda": "ARS",
+    "mercado": "Argentina",
+    "timeframes": {
+      "1D": {
+        "bias": "BAJISTA DEBIL",
+        "fase": "MANIPULACION",
+        "precio_tipo": "Premium",
+        "sweep": "SI",
+        "high": 3333900.25,
+        "low": 3254664.25,
+        "close": 3279820.0,
+        "open": 3291321.5,
+        "lvl_75": 3274473.25,
+        "lvl_50": 3294282.25,
+        "lvl_25": 3314091.25,
+        "mecha_l": 3272992.88,
+        "mecha_h": 3312610.88,
+        "prev_high": 3337994.0,
+        "prev_low": 3265352.0,
+        "prev_open": 3333407.0,
+        "prev_close": 3291322.0,
+        "next_erl_highs": [
+          {
+            "price": 3377317.0,
+            "date": "2026-06-17"
+          },
+          {
+            "price": 3390505.0,
+            "date": "2026-06-12"
+          }
+        ],
+        "next_erl_lows": [
+          {
+            "price": 3151243.0,
+            "date": "2026-01-29"
+          },
+          {
+            "price": 3150234.0,
+            "date": "2026-06-03"
+          },
+          {
+            "price": 3066133.0,
+            "date": "2026-06-05"
+          },
+          {
+            "price": 3043606.0,
+            "date": "2025-12-30"
+          },
+          {
+            "price": 3036279.0,
+            "date": "2025-12-03"
+          }
+        ],
+        "velas_internas": []
+      },
+      "1S": {
+        "bias": "LATERAL",
+        "fase": "ACUMULACION",
+        "precio_tipo": "PRECIO BARATO",
+        "sweep": "NO",
+        "high": 3333900.25,
+        "low": 3254664.25,
+        "close": 3279820.0,
+        "open": 3291321.5,
+        "lvl_75": 3274473.25,
+        "lvl_50": 3294282.25,
+        "lvl_25": 3314091.25,
+        "mecha_l": 3272992.88,
+        "mecha_h": 3312610.88,
+        "prev_high": 3377317.0,
+        "prev_low": 0.0,
+        "prev_open": 0.0,
+        "prev_close": 3291322.0,
+        "next_erl_highs": [
+          {
+            "price": 3390505.0,
+            "date": "2026-06-14"
+          }
+        ],
+        "next_erl_lows": [
+          {
+            "price": 2934956.0,
+            "date": "2025-12-14"
+          },
+          {
+            "price": 2860061.0,
+            "date": "2026-01-25"
+          },
+          {
+            "price": 2729589.0,
+            "date": "2025-11-23"
+          },
+          {
+            "price": 2698659.0,
+            "date": "2026-05-17"
+          },
+          {
+            "price": 2596646.0,
+            "date": "2026-03-22"
+          }
+        ],
+        "velas_internas": [
+          {
+            "fecha": "2026-06-16",
+            "open": 0.0,
+            "high": 0.0,
+            "low": 0.0,
+            "close": 3254705.5
+          },
+          {
+            "fecha": "2026-06-17",
+            "open": 3254706.0,
+            "high": 3377317.0,
+            "low": 3249924.0,
+            "close": 3291883.0
+          },
+          {
+            "fecha": "2026-06-18",
+            "open": 3291883.0,
+            "high": 3358991.0,
+            "low": 3291883.0,
+            "close": 3333407.0
+          },
+          {
+            "fecha": "2026-06-19",
+            "open": 3333407.0,
+            "high": 3337994.0,
+            "low": 3265352.0,
+            "close": 3291322.0
+          }
+        ]
+      },
+      "1M": {
+        "bias": "ALCISTA",
+        "fase": "DISTRIBUCION",
+        "precio_tipo": "PRECIO CARO",
+        "sweep": "SI",
+        "high": 3390505.0,
+        "low": 0.0,
+        "close": 3279820.0,
+        "open": 3166407.0,
+        "lvl_75": 847626.25,
+        "lvl_50": 1695252.5,
+        "lvl_25": 2542878.75,
+        "mecha_l": 1583203.5,
+        "mecha_h": 3278456.0,
+        "prev_high": 3175353.0,
+        "prev_low": 2698659.0,
+        "prev_open": 2832851.0,
+        "prev_close": 3166407.0,
+        "next_erl_highs": [],
+        "next_erl_lows": [],
+        "velas_internas": [
+          {
+            "fecha": "2026-05-03",
+            "open": 2840788.0,
+            "high": 2892497.0,
+            "low": 2788559.0,
+            "close": 2832851.0
+          },
+          {
+            "fecha": "2026-05-10",
+            "open": 2832851.0,
+            "high": 2892472.0,
+            "low": 2744020.0,
+            "close": 2769127.0
+          },
+          {
+            "fecha": "2026-05-17",
+            "open": 2769127.0,
+            "high": 2850174.0,
+            "low": 2698659.0,
+            "close": 2707869.0
+          },
+          {
+            "fecha": "2026-05-24",
+            "open": 2709580.0,
+            "high": 2880557.0,
+            "low": 2703513.0,
+            "close": 2846220.0
+          },
+          {
+            "fecha": "2026-05-31",
+            "open": 2846220.0,
+            "high": 3175353.0,
+            "low": 2846220.0,
+            "close": 3166407.0
+          }
+        ]
+      },
+      "3M": {
+        "bias": "ALCISTA",
+        "fase": "DISTRIBUCION",
+        "precio_tipo": "PRECIO CARO",
+        "sweep": "SI",
+        "high": 3390505.0,
+        "low": 0.0,
+        "close": 3279820.0,
+        "open": 3166407.0,
+        "lvl_75": 847626.25,
+        "lvl_50": 1695252.5,
+        "lvl_25": 2542878.75,
+        "mecha_l": 1583203.5,
+        "mecha_h": 3278456.0,
+        "prev_high": 3175353.0,
+        "prev_low": 2516582.0,
+        "prev_open": 2642106.0,
+        "prev_close": 3166407.0,
+        "next_erl_highs": [],
+        "next_erl_lows": [],
+        "velas_internas": [
+          {
+            "fecha": "2026-03-01",
+            "open": 2642106.0,
+            "high": 3003105.0,
+            "low": 2516582.0,
+            "close": 2997780.0
+          },
+          {
+            "fecha": "2026-04-01",
+            "open": 2997780.0,
+            "high": 3046566.0,
+            "low": 2788559.0,
+            "close": 2832851.0
+          },
+          {
+            "fecha": "2026-05-01",
+            "open": 2832851.0,
+            "high": 3175353.0,
+            "low": 2698659.0,
+            "close": 3166407.0
+          }
+        ]
+      },
+      "6M": {
+        "bias": "ALCISTA",
+        "fase": "MANIPULACION",
+        "precio_tipo": "PRECIO CARO",
+        "sweep": "SI",
+        "high": 3390505.0,
+        "low": 0.0,
+        "close": 3279820.0,
+        "open": 3166407.0,
+        "lvl_75": 847626.25,
+        "lvl_50": 1695252.5,
+        "lvl_25": 2542878.75,
+        "mecha_l": 1583203.5,
+        "mecha_h": 3278456.0,
+        "prev_high": 3296502.0,
+        "prev_low": 2516582.0,
+        "prev_open": 3026470.0,
+        "prev_close": 3166407.0,
+        "next_erl_highs": [],
+        "next_erl_lows": [],
+        "velas_internas": [
+          {
+            "fecha": "2025-12-01",
+            "open": 3026470.0,
+            "high": 3296502.0,
+            "low": 2635350.0,
+            "close": 2642106.0
+          },
+          {
+            "fecha": "2026-03-01",
+            "open": 2642106.0,
+            "high": 3175353.0,
+            "low": 2516582.0,
+            "close": 3166407.0
+          }
+        ]
+      },
+      "1Y": {
+        "bias": "ALCISTA",
+        "fase": "DISTRIBUCION",
+        "precio_tipo": "PRECIO CARO",
+        "sweep": "SI",
+        "high": 3390505.0,
+        "low": 0.0,
+        "close": 3279820.0,
+        "open": 3051617.0,
+        "lvl_75": 847626.25,
+        "lvl_50": 1695252.5,
+        "lvl_25": 2542878.75,
+        "mecha_l": 1525808.5,
+        "mecha_h": 3221061.0,
+        "prev_high": 3195428.0,
+        "prev_low": 1635451.0,
+        "prev_open": 2533635.0,
+        "prev_close": 3051617.0,
+        "next_erl_highs": [],
+        "next_erl_lows": [],
+        "velas_internas": [
+          {
+            "fecha": "2025-06-01",
+            "open": 2278992.0,
+            "high": 3181450.0,
+            "low": 1635451.0,
+            "close": 3026470.0
+          },
+          {
+            "fecha": "2025-12-01",
+            "open": 3026470.0,
+            "high": 3296502.0,
+            "low": 2516582.0,
+            "close": 3166407.0
+          }
+        ]
+      }
+    },
+    "metrics": {
+      "gaps": [],
+      "dealing_range": {
+        "swing_high": {
+          "date": "2026-06-17",
+          "price": 3377317.0
+        },
+        "swing_low": {
+          "date": "2026-06-16",
+          "price": 0.0
+        },
+        "equilibrium": 1688658.5,
+        "dr_high": 3377317.0,
+        "dr_low": 0.0
+      },
+      "fvgs": [],
+      "smt_divergences": {
+        "daily": [],
+        "weekly": []
+      },
+      "weekly_profile": "Consolidation / Unknown"
+    },
+    "statistics": {
+      "adr_20": 85068.6,
+      "current_range": 79236.0,
+      "adr_ratio": 0.93,
+      "gap_fill_probability": 82.28,
+      "bias_edge_probability": 54.16,
+      "scenarios": {
+        "bullish_expansion": 58.06,
+        "bullish_judas": 34.56,
+        "bearish_expansion": 50.0,
+        "bearish_judas": 43.63
+      },
+      "sweep_reversal_edge": {
+        "bullish_success_rate": 62.67,
+        "bearish_success_rate": 61.39,
+        "active_alert": "COMPRA",
+        "active_probability": 62.67
+      }
+    }
+  }
+}
