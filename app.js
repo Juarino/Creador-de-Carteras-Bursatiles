@@ -317,6 +317,8 @@ function updateStrategicAllocationUI() {
   
   // Render allocation donut
   renderAllocationDonut();
+  // Actualiza las recomendaciones del asistente según el perfil actual
+  updateRecommendationsUI();
 }
 
 function renderAllocationDonut() {
@@ -1191,6 +1193,7 @@ function goToStep(step) {
   if (step === 3) {
     renderPortfolioSlots();
     validatePortfolioWeights();
+    updateRecommendationsUI();
   } else if (step === 4) {
     // Build quantitative matrices, compute metrics and run Monte Carlo simulation automatically
     calculateHistoricalMetrics();
@@ -1425,4 +1428,80 @@ function updateBuilderGuidance() {
       ${adv.text}
     </div>
   `).join('');
+}
+
+// ==========================================================================
+// PORTFOLIO BUILDER REC RECOMMENDATIONS DICTIONARY & UI POPULATOR
+// ==========================================================================
+const PROFILE_SUGGESTIONS = {
+  'Conservador': {
+    core: [{ ticker: '^GSPC', label: 'S&P 500' }],
+    satellites: [
+      { ticker: 'MSFT', label: 'Microsoft (Valor)' },
+      { ticker: 'ALUA.BA', label: 'Aluar (Materiales)' },
+      { ticker: 'PAMP.BA', label: 'Pampa (Servicios)' }
+    ]
+  },
+  'Moderado': {
+    core: [{ ticker: '^GSPC', label: 'S&P 500' }],
+    satellites: [
+      { ticker: 'MSFT', label: 'Microsoft (Tecno)' },
+      { ticker: 'META', label: 'Meta (Comunicaciones)' },
+      { ticker: 'GGAL.BA', label: 'Galicia (Banco)' }
+    ]
+  },
+  'Agresivo': {
+    core: [{ ticker: '^GSPC', label: 'S&P 500' }],
+    satellites: [
+      { ticker: 'MELI', label: 'MercadoLibre (E-com)' },
+      { ticker: 'NU', label: 'Nubank (Fintech)' },
+      { ticker: 'BTC-USD', label: 'Bitcoin (Cripto)' },
+      { ticker: 'YPFD.BA', label: 'YPF (Petróleo)' }
+    ]
+  }
+};
+
+function updateRecommendationsUI() {
+  const sa = STATE.strategicAllocation;
+  const profile = sa.profileName;
+  
+  const badge = document.getElementById('rec-profile-badge');
+  if (badge) {
+    badge.textContent = profile;
+    if (profile === 'Agresivo') {
+      badge.style.background = 'var(--color-secondary)';
+    } else if (profile === 'Moderado') {
+      badge.style.background = 'var(--color-primary)';
+    } else {
+      badge.style.background = 'var(--color-accent)';
+    }
+  }
+  
+  const suggestions = PROFILE_SUGGESTIONS[profile] || PROFILE_SUGGESTIONS['Moderado'];
+  
+  const coreList = document.getElementById('rec-list-core');
+  const satList = document.getElementById('rec-list-satellites');
+  
+  if (coreList && satList) {
+    coreList.innerHTML = suggestions.core.map(c => `
+      <span class="rec-badge" data-ticker="${c.ticker}" data-type="core" title="Hacé clic para agregar como activo Núcleo">${c.label} (+ Núcleo)</span>
+    `).join('');
+    
+    satList.innerHTML = suggestions.satellites.map(s => `
+      <span class="rec-badge" data-ticker="${s.ticker}" data-type="satellite" title="Hacé clic para agregar como activo Satélite">${s.label} (+ Satélite)</span>
+    `).join('');
+    
+    // Add click listeners
+    document.querySelectorAll('.profile-recommendations-box .rec-badge').forEach(badge => {
+      badge.addEventListener('click', () => {
+        const ticker = badge.dataset.ticker;
+        const type = badge.dataset.type;
+        if (type === 'core') {
+          addCoreAsset(ticker);
+        } else {
+          addSatelliteAsset(ticker);
+        }
+      });
+    });
+  }
 }

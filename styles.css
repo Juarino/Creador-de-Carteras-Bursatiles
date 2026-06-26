@@ -1477,6 +1477,32 @@ body {
   color: #f87171;
 }
 
+/* Recommendation badges styles */
+.rec-badges-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.rec-badge {
+  background: rgba(90, 98, 243, 0.08);
+  border: 1px solid rgba(90, 98, 243, 0.25);
+  color: var(--text-main);
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.rec-badge:hover {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+  box-shadow: 0 0 10px rgba(90, 98, 243, 0.4);
+}
+
 /* ==========================================================================
    RESPONSIVE DESIGN (MEDIA QUERIES)
    ========================================================================== */
